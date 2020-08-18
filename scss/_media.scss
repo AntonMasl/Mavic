@@ -1,0 +1,16 @@
+@media (max-height: 768px) and (max-width: 1366px) {
+    .top {
+        &__inner {
+            padding: 0;
+        }
+    }
+    .page-section {
+        &__wrapper {
+            padding-top: 100px;
+        }
+    }
+
+    .title {
+        margin-bottom: 30px;
+    }
+}
