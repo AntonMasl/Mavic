@@ -29,7 +29,7 @@ $(function () {
         }
     });
 
-    let $isAnimatedThird = $('.benefits .is-animated'),
+    let $isAnimatedThird = $('.advantages .is-animated'),
         $isAnimatedFourth = $('.specification .is-animated');
     $('#fullpage').fullpage({
         autoScrolling: true,

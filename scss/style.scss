@@ -101,7 +101,10 @@ body {
         text-transform: uppercase;
         border: 1px solid white;
         border-radius: 3px;
-        padding: 6px 27px;
+        // padding: 6px 27px;
+        width: 115px;
+        padding: 6px 0;
+        text-align: center;
         margin-right: 7px;
         display: inline-block;
         cursor: pointer;
@@ -126,7 +129,7 @@ body {
     margin: 0 auto;
 }
 
-.menu {
+.header__menu {
     &__list {
         display: flex;
     }
@@ -342,7 +345,7 @@ body {
     }
 }
 
-.benefits {
+.advantages {
     &__title {
         margin-bottom: 63px;
     }
@@ -359,7 +362,7 @@ body {
         position: relative;
         &:nth-child(1) {
             align-self: flex-start;
-            .benefits__line-img {
+            .advantages__line-img {
                 right: -57px;
                 top: 32px;
             }
@@ -368,7 +371,7 @@ body {
             margin-bottom: 98px;
             padding-top: 17px;
             margin-right: 63px;
-            .benefits__line-img {
+            .advantages__line-img {
                 left: -12px;
                 bottom: -76px;
                 transform: translateX(-100%);
@@ -376,7 +379,7 @@ body {
         }
         &:nth-child(3) {
             padding-left: 30px;
-            .benefits__line-img {
+            .advantages__line-img {
                 right: -76px;
                 top: 20px;
             }
@@ -397,19 +400,19 @@ body {
             z-index: 1;
         }
 
-        &:nth-child(1) .benefits__img::before {
+        &:nth-child(1) .advantages__img::before {
             content: "1";
             @extend %number;
         }
-        &:nth-child(2) .benefits__img::before {
+        &:nth-child(2) .advantages__img::before {
             content: "2";
             @extend %number;
         }
-        &:nth-child(3) .benefits__img::before {
+        &:nth-child(3) .advantages__img::before {
             content: "3";
             @extend %number;
         }
-        &:nth-child(4) .benefits__img::before {
+        &:nth-child(4) .advantages__img::before {
             content: "4";
             @extend %number;
         }

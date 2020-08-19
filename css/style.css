@@ -224,7 +224,9 @@ body {
   text-transform: uppercase;
   border: 1px solid white;
   border-radius: 3px;
-  padding: 6px 27px;
+  width: 115px;
+  padding: 6px 0;
+  text-align: center;
   margin-right: 7px;
   display: inline-block;
   cursor: pointer;
@@ -252,21 +254,21 @@ body {
   margin: 0 auto;
 }
 
-.menu__list {
+.header__menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.menu__list-item {
+.header__menu__list-item {
   margin-right: 20px;
 }
 
-.menu__list-item:last-child {
+.header__menu__list-item:last-child {
   margin-right: 0;
 }
 
-.menu__list-link {
+.header__menu__list-link {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   color: white;
@@ -277,7 +279,7 @@ body {
   position: relative;
 }
 
-.menu__list-link::after {
+.header__menu__list-link::after {
   background-color: #ffeb3b;
   display: block;
   content: "";
@@ -291,7 +293,7 @@ body {
   bottom: -5px;
 }
 
-.menu__list-link:hover::after {
+.header__menu__list-link:hover::after {
   width: 100%;
 }
 
@@ -501,11 +503,11 @@ body {
   stroke: black;
 }
 
-.benefits__title {
+.advantages__title {
   margin-bottom: 63px;
 }
 
-.benefits__items {
+.advantages__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,30 +519,30 @@ body {
   padding-left: 58px;
 }
 
-.benefits__item {
+.advantages__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
-.benefits__item:nth-child(1) {
+.advantages__item:nth-child(1) {
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
-.benefits__item:nth-child(1) .benefits__line-img {
+.advantages__item:nth-child(1) .advantages__line-img {
   right: -57px;
   top: 32px;
 }
 
-.benefits__item:nth-child(2) {
+.advantages__item:nth-child(2) {
   margin-bottom: 98px;
   padding-top: 17px;
   margin-right: 63px;
 }
 
-.benefits__item:nth-child(2) .benefits__line-img {
+.advantages__item:nth-child(2) .advantages__line-img {
   left: -12px;
   bottom: -76px;
   -webkit-transform: translateX(-100%);
@@ -548,21 +550,21 @@ body {
   transform: translateX(-100%);
 }
 
-.benefits__item:nth-child(3) {
+.advantages__item:nth-child(3) {
   padding-left: 30px;
 }
 
-.benefits__item:nth-child(3) .benefits__line-img {
+.advantages__item:nth-child(3) .advantages__line-img {
   right: -76px;
   top: 20px;
 }
 
-.benefits__item:nth-child(4) {
+.advantages__item:nth-child(4) {
   padding-top: 17px;
   margin-right: 13px;
 }
 
-.benefits__item:nth-child(1) .benefits__img::before, .benefits__item:nth-child(2) .benefits__img::before, .benefits__item:nth-child(3) .benefits__img::before, .benefits__item:nth-child(4) .benefits__img::before {
+.advantages__item:nth-child(1) .advantages__img::before, .advantages__item:nth-child(2) .advantages__img::before, .advantages__item:nth-child(3) .advantages__img::before, .advantages__item:nth-child(4) .advantages__img::before {
   font-family: "Ubuntu", sans-serif;
   font-size: 36px;
   line-height: 41px;
@@ -573,23 +575,23 @@ body {
   z-index: 1;
 }
 
-.benefits__item:nth-child(1) .benefits__img::before {
+.advantages__item:nth-child(1) .advantages__img::before {
   content: "1";
 }
 
-.benefits__item:nth-child(2) .benefits__img::before {
+.advantages__item:nth-child(2) .advantages__img::before {
   content: "2";
 }
 
-.benefits__item:nth-child(3) .benefits__img::before {
+.advantages__item:nth-child(3) .advantages__img::before {
   content: "3";
 }
 
-.benefits__item:nth-child(4) .benefits__img::before {
+.advantages__item:nth-child(4) .advantages__img::before {
   content: "4";
 }
 
-.benefits__num {
+.advantages__num {
   font-family: "Ubuntu", sans-serif;
   font-size: 36px;
   line-height: 41px;
@@ -600,13 +602,13 @@ body {
   z-index: 1;
 }
 
-.benefits__img {
+.advantages__img {
   position: relative;
   margin-right: 32px;
   height: 130px;
 }
 
-.benefits__img::after {
+.advantages__img::after {
   content: "";
   width: 195px;
   height: 130px;
@@ -618,24 +620,24 @@ body {
   z-index: -1;
 }
 
-.benefits__info {
+.advantages__info {
   max-width: 300px;
 }
 
-.benefits__info-title {
+.advantages__info-title {
   font-size: 21px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 10px;
 }
 
-.benefits__info-text {
+.advantages__info-text {
   font-weight: 300;
   font-size: 15px;
   line-height: 19px;
 }
 
-.benefits__line-img {
+.advantages__line-img {
   position: absolute;
 }
 
@@ -1083,7 +1085,7 @@ body {
   background-color: white;
 }
 
-@media (max-height: 768px) and (max-width: 1366px) {
+@media (max-height: 768px) {
   .top__inner {
     padding: 0;
   }
