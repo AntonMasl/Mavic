@@ -61,8 +61,8 @@ $(function () {
         }
 
     });
-    $(".menu__list-link").on("click", function (e) {
-        let links = $(".menu__list-link");
+    $(".header__list-link").on("click", function (e) {
+        let links = $(".header__list-link");
         let target = $(this);
         for (let i = 0; i < links.length; i++) {
             if (links[i] == target[0]) {

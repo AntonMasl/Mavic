@@ -130,6 +130,17 @@ body {
 }
 
 .header {
+    &__links {
+        width: 909px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        margin-right: 30px;
+    }
+
     &__menu-list {
         display: flex;
     }

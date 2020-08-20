@@ -254,6 +254,23 @@ body {
   margin: 0 auto;
 }
 
+.header__links {
+  width: 909px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 30px;
+}
+
 .header__menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
