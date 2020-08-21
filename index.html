@@ -20,29 +20,34 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a class="header__logo" href="#">
+                <a class="header__logo" href="#top">
                     <picture class="header__logo-img">
                         <source srcset="images/logo-mobile.png" media="(max-width: 600px)">
                         <img src="images/logo.png" alt="">
                     </picture>
                 </a>
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
+
                 <div class="header__links">
                     <nav class="header__menu">
                         <ul class="header__menu-list">
                             <li class="header__list-item">
-                                <a class="header__list-link" href="#">О ДРОНЕ</a>
+                                <a class="header__list-link" href="#products">О ДРОНЕ</a>
                             </li>
                             <li class="header__list-item">
-                                <a class="header__list-link" href="#">ПРЕИМУЩЕСТВА</a>
+                                <a class="header__list-link" href="#advantages">ПРЕИМУЩЕСТВА</a>
                             </li>
                             <li class="header__list-item">
-                                <a class="header__list-link" href="#">ХАРАКТЕРИСТИКИ </a>
+                                <a class="header__list-link" href="#specification">ХАРАКТЕРИСТИКИ </a>
                             </li>
                             <li class="header__list-item">
-                                <a class="header__list-link" href="#">ВОПРОСЫ</a>
+                                <a class="header__list-link" href="#questions">ВОПРОСЫ</a>
                             </li>
                             <li class="header__list-item">
-                                <a class="header__list-link" href="#">КОНТАКТЫ</a>
+                                <a class="header__list-link" href="#contacts">КОНТАКТЫ</a>
                             </li>
                         </ul>
                     </nav>
@@ -57,7 +62,7 @@
     </header>
 
     <main id="fullpage">
-        <section class="page-section top">
+        <section id="top" class="page-section top">
             <div class="page-section__wrapper top__wrapper">
                 <div class="container">
                     <div class="top__inner">
@@ -83,10 +88,6 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- <d class="scroll-btn">
-                    <img src="images/arrow-down.svg" alt="">
-                </a> -->
                 <div class="scroll">
                     <div class="scroll__inner">
                         <div class="scroll__arrow"></div>
@@ -98,7 +99,7 @@
             </div>
         </section>
 
-        <!-- <section id="products" class="page-section products wow fadeInRightBig">
+        <section id="products" class="page-section products wow fadeInRightBig">
             <div class="page-section__wrapper">
                 <div class="container">
                     <h3 class="title products__title">Что такое Mavic 2 Pro?</h3>
@@ -286,65 +287,72 @@
         <section id="questions" class="page-section questions">
             <div class="page-section__wrapper">
                 <div class="container">
-                    <h3 class="questions__title title">Остались вопросы?</h3>
-                    <div class="questions__items">
-                        <div class="questions__item">
-                            <div class="questions__content">
-                                <h4 class="questions__content-title">Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?
-                                </h4>
-                                <p class="questions__content-text">В Mavic 2 улучшены практически все аспекты: камера,
-                                    передача
-                                    видеосигнала,
-                                    полётное время, скорость, уровень шума, обнаружение препятствий в нескольких
-                                    направлениях,
-                                    интеллектуальные
-                                    функции и уникальная функция Hyperlapse (гиперлапс).</p>
+                    <div class="questions__inner">
+                        <h3 class="questions__title title">Остались вопросы?</h3>
+                        <div class="questions__items">
+                            <div class="questions__item">
+                                <div class="questions__content">
+                                    <h4 class="questions__content-title">Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?
+                                    </h4>
+                                    <p class="questions__content-text">В Mavic 2 улучшены практически все аспекты:
+                                        камера,
+                                        передача
+                                        видеосигнала,
+                                        полётное время, скорость, уровень шума, обнаружение препятствий в нескольких
+                                        направлениях,
+                                        интеллектуальные
+                                        функции и уникальная функция Hyperlapse (гиперлапс).</p>
+                                </div>
+                                <div class="questions__btn"><img class="questions__btn-img"
+                                        src="images/questions-arrow.svg" alt=""></div>
                             </div>
-                            <div class="questions__btn"><img class="questions__btn-img" src="images/questions-arrow.svg"
-                                    alt=""></div>
-                        </div>
-                        <div class="questions__item">
-                            <div class="questions__content">
-                                <h4 class="questions__content-title">Чем Mavic 2 лучше Mavic Pro? </h4>
-                                <p class="questions__content-text">В Mavic 2 улучшены практически все аспекты: камера,
-                                    передача
-                                    видеосигнала,
-                                    полётное время, скорость, уровень шума, обнаружение препятствий в нескольких
-                                    направлениях,
-                                    интеллектуальные
-                                    функции и уникальная функция Hyperlapse (гиперлапс).</p>
+                            <div class="questions__item">
+                                <div class="questions__content">
+                                    <h4 class="questions__content-title">Чем Mavic 2 лучше Mavic Pro? </h4>
+                                    <p class="questions__content-text">В Mavic 2 улучшены практически все аспекты:
+                                        камера,
+                                        передача
+                                        видеосигнала,
+                                        полётное время, скорость, уровень шума, обнаружение препятствий в нескольких
+                                        направлениях,
+                                        интеллектуальные
+                                        функции и уникальная функция Hyperlapse (гиперлапс).</p>
+                                </div>
+                                <div class="questions__btn"><img class="questions__btn-img"
+                                        src="images/questions-arrow.svg" alt=""></div>
                             </div>
-                            <div class="questions__btn"><img class="questions__btn-img" src="images/questions-arrow.svg"
-                                    alt=""></div>
-                        </div>
-                        <div class="questions__item">
-                            <div class="questions__content">
-                                <h4 class="questions__content-title">Можно ли подключить Mavic 2 к очкам DJI Goggles?
-                                </h4>
-                                <p class="questions__content-text">В Mavic 2 улучшены практически все аспекты: камера,
-                                    передача
-                                    видеосигнала,
-                                    полётное время, скорость, уровень шума, обнаружение препятствий в нескольких
-                                    направлениях,
-                                    интеллектуальные
-                                    функции и уникальная функция Hyperlapse (гиперлапс).</p>
+                            <div class="questions__item">
+                                <div class="questions__content">
+                                    <h4 class="questions__content-title">Можно ли подключить Mavic 2 к очкам DJI
+                                        Goggles?
+                                    </h4>
+                                    <p class="questions__content-text">В Mavic 2 улучшены практически все аспекты:
+                                        камера,
+                                        передача
+                                        видеосигнала,
+                                        полётное время, скорость, уровень шума, обнаружение препятствий в нескольких
+                                        направлениях,
+                                        интеллектуальные
+                                        функции и уникальная функция Hyperlapse (гиперлапс).</p>
+                                </div>
+                                <div class="questions__btn"><img class="questions__btn-img"
+                                        src="images/questions-arrow.svg" alt=""></div>
                             </div>
-                            <div class="questions__btn"><img class="questions__btn-img" src="images/questions-arrow.svg"
-                                    alt=""></div>
-                        </div>
-                        <div class="questions__item">
-                            <div class="questions__content">
-                                <h4 class="questions__content-title">Является ли Mavic 2 водонепроницаемым?</h4>
-                                <p class="questions__content-text">В Mavic 2 улучшены практически все аспекты: камера,
-                                    передача
-                                    видеосигнала,
-                                    полётное время, скорость, уровень шума, обнаружение препятствий в нескольких
-                                    направлениях,
-                                    интеллектуальные
-                                    функции и уникальная функция Hyperlapse (гиперлапс).</p>
+                            <div class="questions__item">
+                                <div class="questions__content">
+                                    <h4 class="questions__content-title">Является ли Mavic 2 водонепроницаемым?</h4>
+                                    <p class="questions__content-text">В Mavic 2 улучшены практически все аспекты:
+                                        камера,
+                                        передача
+                                        видеосигнала,
+                                        полётное время, скорость, уровень шума, обнаружение препятствий в нескольких
+                                        направлениях,
+                                        интеллектуальные
+                                        функции и уникальная функция Hyperlapse (гиперлапс).</p>
+                                </div>
+                                <div class="questions__btn"><img class="questions__btn-img"
+                                        src="images/questions-arrow.svg" alt=""></div>
                             </div>
-                            <div class="questions__btn"><img class="questions__btn-img" src="images/questions-arrow.svg"
-                                    alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -357,7 +365,6 @@
                 </div>
             </div>
         </section>
-
         <section id="contacts" class="page-section contacts">
             <div class="page-section__wrapper">
                 <div class="container">
@@ -430,13 +437,8 @@
                     </footer>
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
-
-    <!-- <a class="scroll-btn" href="#contacts">
-                    <img src="images/arrow-down.svg" alt="">
-                </a> -->
-
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/fullpage.min.js"></script>
