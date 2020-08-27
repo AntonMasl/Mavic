@@ -840,14 +840,10 @@ body {
 
 .contacts__form {
   margin-right: 106px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 570px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(290px, 570px);
+  grid-template-columns: minmax(290px, 570px);
 }
 
 .contacts__form-title {
@@ -969,9 +965,6 @@ body {
 }
 
 .contacts__form-btn {
-  -ms-flex-item-align: start;
-  -ms-grid-row-align: start;
-  align-self: start;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -1668,7 +1661,6 @@ body {
   }
   .contacts__form {
     text-align: center;
-    width: 390px;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
@@ -1759,9 +1751,6 @@ body {
     width: 290px;
   }
   .products__slider-img {
-    width: 290px;
-  }
-  .contacts__form {
     width: 290px;
   }
 }

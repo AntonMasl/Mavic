@@ -82,13 +82,14 @@ $(function () {
                     $isAnimatedFourth.eq(3).css('animation-delay', '4s');
                 }
             }
-
         });
     }
+    let bool = true;
     $(window).resize(function () {
-        if ($(window).width() < 991 || $(window).height() < 450) {
+        if (($(window).width() < 991 || $(window).height() < 450) && bool) {
             fullpage_api.destroy('all');
-        } else {
+            bool = false;
+        } else if ($(window).width() >= 991 && $(window).height() >= 450 && !bool) {
             $('#fullpage').fullpage({
                 autoScrolling: true,
                 scrollHorizontally: true,
@@ -118,8 +119,8 @@ $(function () {
                         $isAnimatedFourth.eq(3).css('animation-delay', '4s');
                     }
                 }
-
             });
+            bool = true
         }
     })
 
@@ -174,6 +175,4 @@ $(function () {
             .getActiveSection()
             .item.querySelector(".fp-scrollable");
     });
-
-
 });

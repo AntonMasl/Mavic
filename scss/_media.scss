@@ -1,16 +1,11 @@
 @media (max-width: 1300px) {
-    .page-section {
-        &__wrapper {
-        }
-    }
     .specification {
         .page-section {
             &__wrapper {
                 padding-top: 180px;
             }
         }
-        &__title {
-        }
+       
 
         &__inner {
             display: flex;
@@ -63,11 +58,9 @@
             }
         }
 
-        &__box {
-        }
+     
 
-        &__box-title {
-        }
+       
 
         &__box-text {
             margin: 0;
@@ -76,17 +69,13 @@
 }
 
 @media (max-width: 1250px) {
-    .page-section {
-        &__wrapper {
-        }
-    }
+   
     .advantages {
         .page-section__wrapper {
             padding-top: 100px;
             padding-bottom: 60px;
         }
-        &__title {
-        }
+       
 
         &__items {
             flex-direction: column;
@@ -96,29 +85,15 @@
         &__item {
             margin: 0 !important;
             padding: 0 !important;
-            &:nth-child(1) {
-            }
+            
             &:nth-child(2) {
                 align-self: flex-end;
             }
-            &:nth-child(3) {
-            }
+           
             &:nth-child(4) {
                 align-self: flex-end;
             }
             margin-bottom: 30px !important;
-        }
-
-        &__img {
-        }
-
-        &__info {
-        }
-
-        &__info-title {
-        }
-
-        &__info-text {
         }
 
         &__line-img {
@@ -135,8 +110,6 @@
     }
     .products {
         padding-bottom: 100px;
-        &__title {
-        }
 
         &__inner {
             flex-direction: column;
@@ -159,30 +132,15 @@
             position: static;
             margin-bottom: 20px;
         }
-
-        &__slider {
-        }
-
-        &__slider-item {
-        }
-
-        &__slider-img {
-        }
     }
-    .page-section {
-        &__wrapper {
-        }
-    }
+
     .questions {
         .page-section__wrapper {
             padding-top: 250px;
             padding-bottom: 60px;
         }
     }
-    .page-section {
-        &__wrapper {
-        }
-    }
+    
     .contacts {
         .page-section__wrapper {
             padding-top: 250px;
@@ -711,7 +669,7 @@
 
         &__form {
             text-align: center;
-           width: 390px;
+           
             order: 1;
         }
 
@@ -854,7 +812,7 @@
     }
     .contacts{
         &__form {
-            width: 290px;
+          
              
          }
          &__btn{

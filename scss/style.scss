@@ -701,9 +701,9 @@ body {
 
     &__form {
         margin-right: 106px;
-        display: inline-flex;
-        flex-direction: column;
-        width: 570px;
+        display: grid;
+        grid-template-columns: minmax(290px,570px);
+        
     }
 
     &__form-title {
@@ -765,7 +765,6 @@ body {
     }
 
     &__form-btn {
-        align-self: start;
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
