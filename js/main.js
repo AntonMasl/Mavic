@@ -13,7 +13,7 @@ $(function () {
         scrollHorizontally: true,
         sectionSelector: '.page-section',
         navigation: true,
-        responsiveWidth: 991,
+        responsiveWidth: 992,
         onLeave: function (origin, destination, direction) {
             if (origin.index == 1 && direction == 'down') {
                 $isAnimatedThird.addClass('animated fadeIn');
@@ -50,7 +50,7 @@ $(function () {
         }
     });
 
-    if ($('body').innerWidth() < 991 || $('body').innerHeight() < 450) {
+    if ($('body').innerWidth() < 992 || $('body').innerHeight() < 450) {
         fullpage_api.destroy('all');
     } else {
         $('#fullpage').fullpage({
@@ -58,7 +58,7 @@ $(function () {
             scrollHorizontally: true,
             sectionSelector: '.page-section',
             navigation: true,
-            responsiveWidth: 991,
+            responsiveWidth: 992,
             onLeave: function (origin, destination, direction) {
                 if (origin.index == 1 && direction == 'down') {
                     $isAnimatedThird.addClass('animated fadeIn');
@@ -86,16 +86,16 @@ $(function () {
     }
     let bool = true;
     $(window).resize(function () {
-        if (($(window).width() < 991 || $(window).height() < 450) && bool) {
+        if (($(window).width() < 992 || $(window).height() < 450) && bool) {
             fullpage_api.destroy('all');
             bool = false;
-        } else if ($(window).width() >= 991 && $(window).height() >= 450 && !bool) {
+        } else if ($(window).width() >= 992 && $(window).height() >= 450 && !bool) {
             $('#fullpage').fullpage({
                 autoScrolling: true,
                 scrollHorizontally: true,
                 sectionSelector: '.page-section',
                 navigation: true,
-                responsiveWidth: 991,
+                responsiveWidth: 992,
                 onLeave: function (origin, destination, direction) {
                     if (origin.index == 1 && direction == 'down') {
                         $isAnimatedThird.addClass('animated fadeIn');
@@ -149,7 +149,7 @@ $(function () {
         $isAnimatedFourth = $('.specification .is-animated');
 
     $(".header__list-link").on("click", function (e) {
-        if ($('body').innerWidth() < 991 || $('body').innerHeight() < 450) {
+        if ($('body').innerWidth() < 992 || $('body').innerHeight() < 450) {
             return;
         }
         let links = $(".header__list-link");
@@ -165,7 +165,7 @@ $(function () {
         }
     });
     $('.header__logo').on('click', function (e) {
-        if ($('body').innerWidth() < 991 || $('body').innerHeight() < 450) {
+        if ($('body').innerWidth() < 992 || $('body').innerHeight() < 450) {
             return;
         }
         e.preventDefault();
