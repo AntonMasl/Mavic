@@ -165,7 +165,7 @@ $(function () {
         }
     });
     $('.header__logo').on('click', function (e) {
-        if ($('body').innerWidth() < 767 || $('body').innerHeight() < 450) {
+        if ($('body').innerWidth() < 991 || $('body').innerHeight() < 450) {
             return;
         }
         e.preventDefault();
